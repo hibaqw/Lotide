@@ -15,24 +15,6 @@ const tail = function (arr1) {
             tail.push((arr1[i]));
         }
     }
-    console.log(tail);
     return tail;
 }
-
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);
-// Test Case 1: Check the returned array elements
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2); // ensure we get back two elements
-assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(result[1], "Labs"); // ensure second element is "Labs"
-
-// Test Case 2: ...
-// ...
-result2 = tail(["LHL"]);
-console.log(assertEqual(result2.length, 0));
-
-// Test Case 3: ...
-// ...
-result3 = tail([]);
-console.log(assertEqual(result3.length, 0));
+module.exports= {assertEqual: assertEqual, tail: tail};
