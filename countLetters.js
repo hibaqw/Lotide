@@ -37,7 +37,7 @@ console.log(assertEqual(result2["L"], 1));
 console.log(assertEqual(result2["l"], 1));
 const result3 = countLetters('');
 console.log(assertEqual(result3[''], undefined));
-
+module.exports = countLetters;
 
 
 

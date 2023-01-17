@@ -66,4 +66,5 @@ assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
 //CHECK IF MAP RETURNS EMPTY ARRAY WHEN INPUT ARRAY IS EMPTY
 const results2 = map([], word => word[0]);
 assertArraysEqual(results2, []);
+module.exports = map;
 

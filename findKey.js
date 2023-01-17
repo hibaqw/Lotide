@@ -36,3 +36,4 @@ console.log(assertEqual(findKey(testObject, x => x.stars === 2 ),"noma" )); //Ha
 console.log(assertEqual(findKey(testObject, x => x.stars >= 4),undefined ));//Happy Path Test Case 2 => true
 //INPUT EMPTY OBJECT
 console.log(assertEqual(findKey({}, () => {return "Hello World" }), undefined )); // => true
+module.exports = findKey;

@@ -76,6 +76,7 @@ console.log(assertArraysEqual(data3,result3));
 // IF ARRAY IS EMPTY
 const result4= takeUntil([], x => {if (x) return x});
 console.log(assertArraysEqual(result4,[]));
+module.exports = takeUntil;
 
 
 

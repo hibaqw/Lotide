@@ -65,3 +65,4 @@ const result3 = countOnly(firstNames, {});
 console.log(assertEqual(Object.keys(result3).length, 0));
 const result4 = countOnly([], { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 console.log(assertEqual(Object.keys(result4).length, 0));
+module.exports = countOnly;

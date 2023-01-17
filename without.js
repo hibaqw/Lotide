@@ -56,7 +56,7 @@ const without = function (listToFilter, filter) {
     return newList;
 
 }
-
+module.exports = without;
 //CASE 1: CHECK IF OLD ARRAY WAS MODIFIED
 //const words = ["hello", "world", "lighthouse"];
 //console.log(without(["lighthouse"], words)); // no need to capture return value for this test case
