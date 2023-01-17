@@ -1,4 +1,3 @@
-const assertEqual = require('./assertEqual');
 const head = function (arr1) {
     let arrLength = arr1.length;
     let head = undefined;
@@ -7,4 +6,4 @@ const head = function (arr1) {
     }
     return head;
 }
-module.exports = { assertEqual: assertEqual, head: head};
+module.exports = head;
