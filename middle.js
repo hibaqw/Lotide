@@ -1,4 +1,4 @@
-const assertArraysEqual = require('./assertArraysEqual');
+//const assertArraysEqual = require('./assertArraysEqual');
 const middle = function (arr1) {
     /*TODO:
     1. Initialize new array
