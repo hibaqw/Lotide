@@ -45,23 +45,25 @@ const assertArraysEqual = function (arr1, arr2) {
 const without = function (listToFilter, filter) {
 
     let newList = [];
+   
 
-    for (let i = 0; i < listToFilter; i++) {
-        if (!filter.includes(listToFilter[i])) {
+    for (let i = 0; i < listToFilter.length; i++) {
+        if(!filter.includes(listToFilter[i])){
             newList.push(listToFilter[i]);
         }
-
-    }
+        
+    } 
 
     return newList;
 
 }
 module.exports = without;
 //CASE 1: CHECK IF OLD ARRAY WAS MODIFIED
-//const words = ["hello", "world", "lighthouse"];
+const words = ["hello", "world", "lighthouse", "lighthouse"];
+console.log(without(words,["lighthouse", "hello"]));
 //console.log(without(["lighthouse"], words)); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
-//ssertArraysEqual(words, ["hello", "world", "lighthouse"]);
+//console.log(assertArraysEqual(without(words, "lighthouse"), ["hello", "world"]));
 
 //CASE 2: CHECK IF BOTH ARRAYS ARE THE SAME
 // IN THE CASE A WORD THAT DOES NOT EXIST IN ORIGINAL ARRAY WAS ENTERED

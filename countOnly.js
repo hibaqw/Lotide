@@ -1,11 +1,4 @@
-const assertEqual = function (actual, expected) {
-    if (actual === expected)
-        return true;
 
-    else
-        return false
-
-};
 const countOnly = function (allItems, itemsToCount) {
     /*
     1. create an empty object
@@ -37,32 +30,33 @@ const countOnly = function (allItems, itemsToCount) {
 }
 
 
-const firstNames = [
-    "Karl",
-    "Salima",
-    "Agouhanna",
-    "Fang",
-    "Kavith",
-    "Jason",
-    "Salima",
-    "Fang",
-    "Joe"
-];
+// const firstNames = [
+//     "Karl",
+//     "Salima",
+//     "Agouhanna",
+//     "Fang",
+//     "Kavith",
+//     "Jason",
+//     "Salima",
+//     "Fang",
+//     "Joe"
+// ];
 
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+// const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-console.log(assertEqual(result1["Jason"], 1));
-console.log(assertEqual(result1["Karima"], undefined));
-console.log(assertEqual(result1["Fang"], 2));
-console.log(assertEqual(result1["Agouhanna"], undefined));
-/*TESTING SPECFIC CASES: EMPTY ARRAY AND OBJECT
-PASSING EMPTY OBJECT AND ARRAY
-PASSING EMPTY ARRAY AND OBJECT*/
-const result2 = countOnly([], {});
-console.log(assertEqual(Object.keys(result2).length, 0));
+// console.log(assertEqual(result1["Jason"], 1));
+// console.log(assertEqual(result1["Karima"], undefined));
+// console.log(assertEqual(result1["Fang"], 2));
+// console.log(assertEqual(result1["Agouhanna"], undefined));
+// /*TESTING SPECFIC CASES: EMPTY ARRAY AND OBJECT
+// PASSING EMPTY OBJECT AND ARRAY
+// PASSING EMPTY ARRAY AND OBJECT*/
+// const result2 = countOnly([], {});
+// console.log(assertEqual(Object.keys(result2).length, 0));
 
-const result3 = countOnly(firstNames, {});
-console.log(assertEqual(Object.keys(result3).length, 0));
-const result4 = countOnly([], { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
-console.log(assertEqual(Object.keys(result4).length, 0));
-module.exports = countOnly;
+// const result3 = countOnly(firstNames, {});
+// console.log(assertEqual(Object.keys(result3).length, 0));
+// const result4 = countOnly([], { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+// console.log(assertEqual(Object.keys(result4).length, 0));
+ module.exports = countOnly;
+
